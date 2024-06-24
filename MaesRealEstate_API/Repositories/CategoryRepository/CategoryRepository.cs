@@ -4,7 +4,7 @@ using MaesRealEstate_API.Models.DapperContext;
 
 namespace MaesRealEstate_API.Repositories.CategoryRepository
 {
-    public class CategoryRepository : ICategoryRepository
+    public class CategoryRepository : IWoWeAreDetailControllerRepository
     {
         private readonly Context _context;
         public CategoryRepository(Context context)

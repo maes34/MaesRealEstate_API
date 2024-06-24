@@ -9,9 +9,9 @@ namespace MaesRealEstate_API.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IWoWeAreDetailControllerRepository _categoryRepository;
 
-        public CategoriesController(ICategoryRepository categoryRepository)
+        public CategoriesController(IWoWeAreDetailControllerRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
         }

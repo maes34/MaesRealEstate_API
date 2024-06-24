@@ -2,7 +2,7 @@
 
 namespace MaesRealEstate_API.Repositories.CategoryRepository
 {
-    public interface ICategoryRepository
+    public interface IWoWeAreDetailControllerRepository
     {
         Task<List<ResultCategoryDto>> GetAllCategoryAsync();
         void CreateCategory(CreateCategoryDto categoryDto);

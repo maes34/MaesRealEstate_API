@@ -2,14 +2,16 @@
 using MaesRealEstate_API.Models.DapperContext;
 using MaesRealEstate_API.Repositories.CategoryRepository;
 using MaesRealEstate_API.Repositories.ProductRepository;
+using MaesRealEstate_API.Repositories.WhoWeAreRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddTransient<Context>();
-builder.Services.AddTransient<ICategoryRepository, CategoryRepository>(); 
+builder.Services.AddTransient<IWoWeAreDetailControllerRepository, CategoryRepository>(); 
 builder.Services.AddTransient<IProductRepository, ProductRepository>(); 
+builder.Services.AddTransient<IWhoWeAreDetailRepository, WhoWeAreDetailRepository>(); 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
