@@ -11034,9 +11034,11 @@ a.title-small {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0, rgba(0, 0, 0, 0.09) 11%, rgba(0, 0, 0, 0.12) 13%, rgba(0, 0, 0, 0.19) 20%, rgba(0, 0, 0, 0.29) 28%, rgba(0, 0, 0, 0.29) 29%, rgba(0, 0, 0, 0.42) 38%, rgba(0, 0, 0, 0.46) 43%, rgba(0, 0, 0, 0.53) 47%, rgba(0, 0, 0, 0.75) 69%, rgba(0, 0, 0, 0.87) 84%, rgba(0, 0, 0, 0.98) 99%, rgba(0, 0, 0, 0.94) 100%); }
 
 .locations-1 .box16 img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s linear; }
+    width: 100%;                           
+    aspect-ratio: 3/2;
+    height: auto;
+    transition: transform 0.3s linear;
+}
 
 .locations-1 .box16 .box-content {
   padding: 25px;
