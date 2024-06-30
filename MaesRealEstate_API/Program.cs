@@ -5,6 +5,7 @@ using MaesRealEstate_API.Repositories.ProductRepository;
 using MaesRealEstate_API.Repositories.PopularLocationRepositories;
 using MaesRealEstate_API.Repositories.ServiceRepository;
 using MaesRealEstate_API.Repositories.WhoWeAreRepository;
+using MaesRealEstate_API.Repositories.TestimonialRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddTransient<IWhoWeAreDetailRepository, WhoWeAreDetailRepositor
 builder.Services.AddTransient<IServiceRepository, ServiceRepository>(); 
 builder.Services.AddTransient<IBottomGridRepository, BottomGridRepository>(); 
 builder.Services.AddTransient<IPopularLocationRepository, PopularLocationRepository>(); 
+builder.Services.AddTransient<ITestimonialRepository, TestimonialRepository>(); 
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
